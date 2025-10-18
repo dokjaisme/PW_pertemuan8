@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Free Registration</title>
+<style>
+    body {
+        font-family: Times New Roman, serif;
+    }
+    .title {
+        color: purple;
+        font-weight: bold;
+        margin: 0; /* Removes default heading margin */
+        padding-bottom: 10px; /* Adds space between title and form */
+    }
+    table {
+        /* This ensures clean alignment without extra spacing */
+        border-collapse: collapse;
+    }
+    table td {
+        padding: 2px;
+    }
+    /* Aligns all labels to the top, which looks better with multi-line elements */
+    .label-column {
+        vertical-align: top;
+    }
+</style>
+</head>
+<body>
+
+<form action="#" method="post">
+    <table>
+        <tr>
+            <td></td> <td><h2 class="title">Free Registration</h2></td>
+        </tr>
+
+        <tr>
+            <td class="label-column"><label for="nama">Nama</label></td>
+            <td>: <input type="text" id="nama" name="nama" size="30"></td>
+        </tr>
+
+        <tr>
+            <td class="label-column"><label for="tgl">Tgl Lahir</label></td>
+            <td>
+                : <input type="text" id="tgl" name="tanggal" size="2"> /
+                <input type="text" name="bulan" size="2"> /
+                <input type="text" name="tahun" size="4">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="label-column"><label for="alamat">Alamat</label></td>
+            <td>: <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea></td>
+        </tr>
+
+        <tr>
+            <td class="label-column"><label for="kota">Kota</label></td>
+            <td>: <input type="text" id="kota" name="kota" size="30"></td>
+        </tr>
+
+        <tr>
+            <td class="label-column"><label for="pekerjaan">Pekerjaan</label></td>
+            <td>:
+                <select id="pekerjaan" name="pekerjaan">
+                    <option>Pilih Pekerjaan</option>
+                    <option>Tani</option>
+                    <option>Wiraswasta</option>
+                    <option>Pegawai Negeri</option>
+                    <option>Pelajar/Mahasiswa</option>
+                    <option>Lainnya</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="label-column">Jenis Kelamin</td>
+            <td>
+                : <input type="radio" id="laki" name="jenis_kelamin" value="Laki-Laki">
+                <label for="laki">Laki-Laki</label>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                <label for="perempuan">Perempuan</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="label-column">Hobby</td>
+            <td>
+                : <input type="checkbox" id="reading" name="hobby[]" value="Reading">
+                <label for="reading">Reading</label><br>
+                &nbsp;&nbsp;<input type="checkbox" id="sport" name="hobby[]" value="Sport">
+                <label for="sport">Sport</label><br>
+                &nbsp;&nbsp;<input type="checkbox" id="singing" name="hobby[]" value="Singing">
+                <label for="singing">Singing</label><br>
+                &nbsp;&nbsp;<input type="checkbox" id="traveling" name="hobby[]" value="Traveling">
+                <label for="traveling">Traveling</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td> <td>
+                &nbsp;&nbsp;<input type="submit" value="Kirim">
+                <input type="reset" value="Cancel">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
